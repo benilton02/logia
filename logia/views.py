@@ -4,13 +4,15 @@ from rest_framework.authentication import TokenAuthentication
 from rest_framework.authtoken.models import Token
 from rest_framework.permissions import IsAuthenticated
 from django.contrib.auth.models import User
+from django.shortcuts import get_object_or_404
 import json
-# Create your views here.
+
 
 @api_view(['POST'])
 def get_or_create_token(request, username):
     try:
-        user = User.objects.get(username=username)
+        user = User.objects.get_or_create(id=1, username=username)
+        print(user)
     except User.DoesNotExist:
         data = {'error': 'User does not exist'}
         return JsonResponse(data, status=404)
