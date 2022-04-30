@@ -7,7 +7,7 @@ class PatientsModel(models.Model):
     uuid = models.CharField(max_length=256)
     first_name = models.CharField(max_length=30)
     last_name = models.CharField(max_length=30)
-    date_of_birth = models.DateField(default=str(), blank=True)
+    date_of_birth = models.DateField(blank=True)
 
     def __str__(self) -> str:
         return f'{self.uuid}, {self.first_name}, {self.last_name}, {self.date_of_birth}'
@@ -33,7 +33,7 @@ class TransactionsModel(models.Model):
     patient_uuid = models.ForeignKey(PatientsModel, on_delete=models.DO_NOTHING)
     pharmacy_uuid = models.ForeignKey(PharmaciesModel, on_delete=models.DO_NOTHING)
     amount = models.FloatField(null=True, blank=True)
-    timestamp = models.DateField(default=str(), blank=True)
+    timestamp = models.DateField(blank=True)
 
 
 class UsersModel(models.Model):
