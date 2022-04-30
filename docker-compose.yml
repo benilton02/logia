@@ -1,24 +1,18 @@
 version: "3.9"
    
 services:
-  
   db:
     image: nouchka/sqlite3:latest
     volumes:
       - ./data/db:/root/db
     environment:
       - SQLITE3_DB=db.sqlite3
-    restart: always
-    container_name: db_logia_container
-    
-  api:
+  web:
     build: .
-    command: python3 manage.py runserver 8000
+    command: python3.9 manage.py runserver 0.0.0.0:8000
     volumes:
       - .:/code
     ports:
       - "8000:8000"
-    container_name: api_logia_container
-    
     depends_on:
       - db
