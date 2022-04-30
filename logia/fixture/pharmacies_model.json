@@ -1,0 +1,47 @@
+[
+    {
+        "model": "logia.PharmaciesModel",
+        "pk":"1",
+        "fields":{
+            "uuid": "PHARM0001",
+            "name": "DROGA MAIS",
+            "city": "RIBEIRAO PRETO"
+        }
+    },
+    {
+        "model": "logia.PharmaciesModel",
+        "pk":"2",
+        "fields":{
+            "uuid":"PHARM0002",
+            "name":"DROGAO SUPER",
+            "city":"SAO SIMAO"
+        }
+    },
+    {
+        "model": "logia.PharmaciesModel",
+        "pk":"3",
+        "fields":{
+            "uuid":"PHARM0003",
+            "name":"SUPER DROGAO",
+            "city":"RIBEIRAO PRETO"
+        }
+    },
+    {
+        "model": "logia.PharmaciesModel",
+        "pk":"4",
+        "fields":{
+            "uuid":"PHARM0004",
+            "name":"DROGAO SUPER",
+            "city":"LIMEIRA"
+        }
+    },
+    {
+        "model": "logia.PharmaciesModel",
+        "pk":"5",
+        "fields":{
+            "uuid":"PHARM0005",
+            "name":"DROGARIA SAO SIMAO",
+            "city":"RIBEIRAO PRETO"
+        }
+    }
+]

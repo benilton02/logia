@@ -1,0 +1,53 @@
+[
+    {
+        "model": "logia.PatientsModel",
+        "pk":"1",
+        "fields":{
+            "uuid": "PATIENT0001",
+            "first_name":"NAME0001",
+            "last_name":"LASTNAME0001",
+            "date_of_birth":"2000-11-30"
+        }
+    },
+    {
+        "model": "logia.PatientsModel",
+        "pk":"2",
+        "fields":{
+            "uuid": "PATIENT0002",
+            "first_name":"NAME0002",
+            "last_name":"LASTNAME0002",
+            "date_of_birth":"2000-11-30"
+        }
+    },
+    {
+        "model": "logia.PatientsModel",
+        "pk":"3",
+        "fields":{
+            "uuid": "PATIENT0003",
+            "first_name":"NAME0003",
+            "last_name":"LASTNAME0003",
+            "date_of_birth":"2000-11-30"
+        }
+    },
+    {
+        "model": "logia.PatientsModel",
+        "pk":"4",
+        "fields":{
+            "uuid": "PATIENT0004",
+            "first_name":"NAME0004",
+            "last_name":"LASTNAME0004",
+            "date_of_birth":"2000-11-30"
+        }
+    },
+    {
+        "model": "logia.PatientsModel",
+        "pk":"5",
+        "fields":{
+            "uuid": "PATIENT0005",
+            "first_name":"NAME0005",
+            "last_name":"LASTNAME0005",
+            "date_of_birth":"2000-11-30"
+        }
+    }
+    
+]
