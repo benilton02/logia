@@ -1,16 +1,16 @@
-# logia
-logia
+### Abount Project: 
+- This project is a private API that uses Token authentication, Django Rest Framework. 
 
+### Enpoints:
 
-## Inside container
-python manage.py makemigrations logia
-python manage.py migrate logia
-python manage.py migrate --run-syncdb 
+- /patients: this enpoint list all patients on db.
+- /pharmacies:  this enpoint list all pharmacies on db.
+- /transactions: this enpoint list all transactions on db.
+- /create-user: this endpoint creates a user and generates an access token.
 
-## Inside container
-apply an specific fixture (example):
-python manage.py loaddata logia/fixture/pharmacies_model.json
+### Run API on Linux:
+- Enter the project directory and run the commands below:
 
-## Inside container
-apply all fixtures:
-python manage.py loaddata logia/fixture/*
+`$ chmod 755 env.sh`
+`$ . env.sh`
+
