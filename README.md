@@ -1,4 +1,4 @@
-### Abount Project: 
+### About Project: 
 - This project is a private API that uses Token authentication, Django Rest Framework. 
 
 ### Enpoints:
